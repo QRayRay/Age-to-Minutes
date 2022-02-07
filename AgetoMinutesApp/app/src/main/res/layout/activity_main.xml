@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    Make sure the splash screen is Orange with Silver outlines
+ The Code is is made up in andrdoid studio, compiling test to make sure it will run on 2 activities
     
     <TextView
         android:layout_width="wrap_content"
