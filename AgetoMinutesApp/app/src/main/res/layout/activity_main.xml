@@ -20,12 +20,19 @@
 
     <Button
         android:id="@+id/ClickMeButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="188dp"
+        android:layout_height="93dp"
+        android:shadowColor="@color/black"
+        android:stateListAnimator="@android:anim/accelerate_interpolator"
         android:text="Rep Count"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textStyle="bold"
+        app:iconTint="#F6CCCC"
         app:layout_constraintBottom_toTopOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:rippleColor="@android:color/holo_orange_dark" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
