@@ -1,27 +1,48 @@
 package com.example.agetominutesapp
 
-import android.annotation.SuppressLint
+
+import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import android.widget.TextView
 import android.widget.Toast
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
-    @SuppressLint("SetTextI18n")
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val btnClickMe = findViewById<Button>(R.id.ClickMeButton)
-        val tvMyTextView = findViewById<TextView>(R.id.textView)
-        var timesClicked = 0
-        btnClickMe.setOnClickListener {
-           timesClicked += 1
+        val btnDatePicker: Button = findViewById(R.id.btnDatePicker)
 
-            tvMyTextView.text = timesClicked.toString()
-            Toast.makeText(this, "NEW PR!" , Toast.LENGTH_LONG).show()
+        btnDatePicker.setOnClickListener {
+            clickDatePicker()
         }
 
     }
-}
+
+    fun clickDatePicker(){
+
+        val myCalendar = Calendar.getInstance()
+        val year = myCalendar.get(Calendar.YEAR)
+        val month = myCalendar.get(Calendar.MONTH)
+        val day = myCalendar.get(Calendar.DAY_OF_MONTH)
+
+        DatePickerDialog(this,
+            DatePickerDialog.OnDateSetListener{ view, year, month, dayOfMonth ->
+
+                Toast.makeText(this,
+                    "Datepicker works" , Toast.LENGTH_LONG).show()
+
+        },
+        year,
+        month,
+        day
+        ).show()
+
+
+
+
+    }
+
