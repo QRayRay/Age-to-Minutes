@@ -17,17 +17,17 @@
         android:text="@string/calculate_your"
         android:textColor="@color/design_default_color_error"
         android:textSize="25sp"
-        android:textStyle="bold"
-         />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/Age"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/age"
+        android:background="@color/teal_700"
         android:padding="20dp"
-        android:background="@color/white"
+        android:shadowColor="@color/black"
+        android:text="@string/age"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold" />
@@ -40,8 +40,7 @@
         android:text="@string/in_minutes"
         android:textColor="@color/design_default_color_error"
         android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/btnDatePicker"
@@ -54,19 +53,17 @@
         android:textSize="20sp"
         android:padding="20dp"
         android:layout_margin="20dp"
-        android:shadowColor="@color/black"
-        />
+        android:shadowColor="@color/black" />
 
     <TextView
         android:id="@+id/tvSelectedDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/_01_31_1994"
+        android:text="@string/_01_01_1900"
         android:textColor="@color/design_default_color_error"
         android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/TextView4"
@@ -83,11 +80,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:text="@string/_10000"
+        android:text="@string/_0"
         android:textColor="@color/design_default_color_error"
         android:textSize="25sp"
-        android:textStyle="bold"
-        />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/TextView6"
