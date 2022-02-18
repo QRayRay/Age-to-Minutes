@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnDatePicker: Button = findViewById(R.id.btnDatePicker)
+
         tvSelectedDate = findViewById(R.id.tvSelectedDate)
         tvAgeInMinutes = findViewById(R.id.tvAgeInMinutes)
         btnDatePicker.setOnClickListener {
@@ -28,14 +29,14 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    fun clickDatePicker(){
+    private fun clickDatePicker(){
 
         val myCalendar = Calendar.getInstance()
         val year = myCalendar.get(Calendar.YEAR)
         val month = myCalendar.get(Calendar.MONTH)
         val day = myCalendar.get(Calendar.DAY_OF_MONTH)
         val dpd = DatePickerDialog(this,
-        { view, selectedYear, selectedMonth, selectedDayOfMonth ->
+        { _, selectedYear, selectedMonth, selectedDayOfMonth ->
 
             Toast.makeText(this,
                 "Year was $selectedYear, month was ${selectedMonth+1}, day of month " +
@@ -48,6 +49,8 @@ class MainActivity : AppCompatActivity() {
             val sdf = SimpleDateFormat("dd/MM/yyyy", Locale.ENGLISH)
 
             val theDate = sdf.parse(selectedDate)
+            theDate?.let {
+
 
             val selectedDateInMinutes = theDate.time / 60000
 
@@ -58,7 +61,7 @@ class MainActivity : AppCompatActivity() {
             val differenceInMinutes = currentDateInMinutes - selectedDateInMinutes
 
             tvAgeInMinutes?.text = differenceInMinutes.toString()
-
+            }
         },
         year,
         month,
