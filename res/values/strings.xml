@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Age to Minutes App</string>
+    <string name="hello_raymond">Hello Raymond</string>
+    <string name="rep_count">Rep Count</string>
+    <string name="_0">0</string>
+    <string name="calculate_your">CALCULATE YOUR</string>
+    <string name="age">AGE</string>
+    <string name="in_minutes">IN MINUTES</string>
+    <string name="select_date">Select Date</string>
+    <string name="_01_31_1994">01/31/1994</string>
+    <string name="_10000">10000</string>
+    <string name="selected_date">Selected Date</string>
+    <string name="in_minutes_till_date">In Minutes till date</string>
+    <string name="_01_01_1900">01/01/1900</string>
+    <string name="_0">0</string>
+</resources>
