@@ -9,8 +9,7 @@
     android:background="@color/bgColor"
     >
     
-    // This app is a test layout for the workout Q app to make sure the date select is working properly and is able to save works outs through the caleldar.
-
+   
     <TextView
         android:id="@+id/TextView"
         android:layout_width="wrap_content"
